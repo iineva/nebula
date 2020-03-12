@@ -95,7 +95,7 @@ set (SRC_LIST
 )
 
 add_library(base STATIC ${SRC_LIST})
-target_link_libraries(base proxygenhttpserver.a proxygenlib.a wangle.a folly.a boost_context boost_filesystem boost_system double-conversion glog gflags event /usr/local/opt/openssl/lib/libcrypto.a /usr/local/opt/openssl/lib/libssl.a pthread z)
+target_link_libraries(base proxygenhttpserver.a proxygenlib.a wangle.a folly.a boost_context boost_filesystem boost_system double-conversion glog gflags event /usr/local/opt/openssl/lib/libcrypto.a /usr/local/opt/openssl/lib/libssl.a pthread z inotify)
 # target_link_libraries(base proxygenhttpserver.a proxygenlib.a wangle.a folly.a boost_context boost_filesystem boost_system double-conversion glog gflags event ${OPENSSL_SSL_LIBRARY} ${OPENSSL_CRYPTO_LIBRARY} pthread z)
 
 #add_subdirectory(test)
