@@ -39,5 +39,5 @@ mysql_query_util.h
 add_library (mysql_client ${SRC_LIST})
 target_link_libraries (mysql_client /usr/local/mysql/lib/libmysqlclient.a)
 
-add_subdirectory(test)
+#add_subdirectory(test)
 
