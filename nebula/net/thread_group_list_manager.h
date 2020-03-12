@@ -26,7 +26,7 @@
 
 #include <folly/Conv.h>
 #include <folly/Range.h>
-#include <folly/System/ThreadName.h>
+#include <folly/system/ThreadName.h>
 #include <folly/Singleton.h>
 #include <folly/io/async/EventBase.h>
 
