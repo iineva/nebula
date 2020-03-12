@@ -85,4 +85,4 @@ set (SRC_ASYNC_UDP_SOCKET_TEST_LIST
  )
 
 add_executable (async_udp_socket_test ${SRC_ASYNC_UDP_SOCKET_TEST_LIST})
-target_link_libraries (async_udp_socket_test /usr/local/lib/libfolly.a boost_context-mt boost_filesystem-mt boost_system-mt double-conversion glog gflags event /usr/local/opt/openssl/lib/libcrypto.a /usr/local/opt/openssl/lib/libssl.a pthread z)
+target_link_libraries (async_udp_socket_test /usr/local/lib/libfolly.a boost_context boost_filesystem boost_system double-conversion glog gflags event /usr/local/opt/openssl/lib/libcrypto.a /usr/local/opt/openssl/lib/libssl.a pthread z)

@@ -21,11 +21,11 @@ set (SRC_BENCHMARK_LIST
  )
 
 add_executable (benchmark ${SRC_BENCHMARK_LIST})
-target_link_libraries (benchmark folly.a wangle.a boost_context-mt boost_filesystem-mt boost_system-mt double-conversion glog gflags event /usr/local/opt/openssl/lib/libcrypto.a /usr/local/opt/openssl/lib/libssl.a pthread z)
+target_link_libraries (benchmark folly.a wangle.a boost_context boost_filesystem boost_system double-conversion glog gflags event /usr/local/opt/openssl/lib/libcrypto.a /usr/local/opt/openssl/lib/libssl.a pthread z)
 
 set (SRC_BENCH_ASIO_LIST
   bench_asio.cc
  )
 
 add_executable (bench_asio ${SRC_BENCH_ASIO_LIST})
-target_link_libraries (bench_asio boost_context-mt boost_filesystem-mt boost_system-mt double-conversion glog gflags event /usr/local/opt/openssl/lib/libcrypto.a /usr/local/opt/openssl/lib/libssl.a pthread z)
+target_link_libraries (bench_asio boost_context boost_filesystem boost_system double-conversion glog gflags event /usr/local/opt/openssl/lib/libcrypto.a /usr/local/opt/openssl/lib/libssl.a pthread z)
