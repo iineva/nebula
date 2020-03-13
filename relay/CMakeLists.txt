@@ -24,4 +24,4 @@ set (SRC_LIST
 )
 
 add_executable (relay ${SRC_LIST})
-target_link_libraries (relay net base)
+target_link_libraries (net base)
