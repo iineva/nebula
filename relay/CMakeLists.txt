@@ -23,5 +23,7 @@ set (SRC_LIST
   tgvoip_handler.h
 )
 
+set(CMAKE_EXE_LINKER_FLAGS "-ldl")
+
 add_executable (relay ${SRC_LIST})
 target_link_libraries (relay net base folly)
